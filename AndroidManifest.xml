@@ -71,6 +71,6 @@
     -->
     <permission android:protectionLevel="signature"
                 android:name="com.hsdemo.auction.permission.C2D_MESSAGE" />
-    <uses-permission android:name="com.hubspot.auction.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.hsdemo.auction.permission.C2D_MESSAGE" />
 
 </manifest>

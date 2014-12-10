@@ -1,7 +1,9 @@
-package com.hubspot.disruption.auction.models;
+package com.hsdemo.auction.models;
 
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
+
+import java.util.Date;
 
 /**
  * Created by jtsuji on 11/14/14.
@@ -10,7 +12,24 @@ import com.parse.ParseObject;
 @ParseClassName("NewBid")
 public class Bid extends ParseObject {
 
+  public static final String INITIAL_BIDDER_EMAIL = "";
+  public static final String INITIAL_BIDDER_NAME = "Starting Price";
+
+  public long createdAt = 0;
+
   public Bid() {}
+
+  public static Bid getInitialBid(int price) {
+    Bid bid = new Bid();
+    bid.setEmail(INITIAL_BIDDER_EMAIL);
+    bid.setName(INITIAL_BIDDER_NAME);
+    bid.setAmount(price);
+    return bid;
+  }
+
+  public Date getCreatedAtDate() {
+    return getCreatedAt() == null ? new Date(createdAt) : getCreatedAt();
+  }
 
   public String getEmail() {
     return getString("email");

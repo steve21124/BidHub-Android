@@ -1,4 +1,4 @@
-package com.hubspot.disruption.auction;
+package com.hsdemo.auction;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.squareup.okhttp.OkHttpClient;
 
 /**
  * Created by jtsuji on 11/14/14.
