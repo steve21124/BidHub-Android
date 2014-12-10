@@ -1,0 +1,143 @@
+<resources>
+    <color name="topgray_opaque">#515359</color>
+    <color name="topgray">#55515359</color>
+    <color name="primary_orange">#DE6A1D</color>
+    <color name="dark_orange">#AE591B</color>
+    <color name="selected_orange_light">#FFE3D1</color>
+    <color name="spacer_color">#DDD</color>
+    <color name="lightest_gray">#f8f7f4</color>
+    <color name="mid_light_gray">#ffe4e4e4</color>
+    <color name="light_gray">#d5d5d5</color>
+    <color name="medium_gray">#919191</color>
+    <color name="medium_gray_semitrans">#aa919191</color>
+    <color name="gray">#ff676a72</color>
+    <color name="dark_gray">#515359</color>
+    <color name="very_dark_gray">#FF313131</color>
+    <color name="dark_gray_semitrans">#ca515359</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sources_numbers_background">#FFF8F7F4</color>
+    <color name="sources_green">#929020</color>
+    <color name="sources_yellow">#C8982F</color>
+    <color name="sources_teal">#569384</color>
+    <color name="sources_orange">#B96C34</color>
+    <color name="sources_red">#D32B21</color>
+    <color name="sources_blue">#3B79BA</color>
+    <color name="sources_magenta">#8F4C78</color>
+    <color name="sources_violet">#523BC1</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="transparent_black_med">#bb000000</color>
+    <color name="transparent_black_dark">#55000000</color>
+    <color name="semitrans">#aaeeeeee</color>
+    <color name="popup_body">#cceeeeee</color>
+    <color name="tan">#fffff1c6</color>
+    <color name="green_customer">#99aa00</color>
+    <color name="orange_contact">#df7709</color>
+    <color name="black">#000</color>
+
+    <!-- Drawer Menu Colors -->
+    <color name="slate_gray">#303030</color>
+    <color name="dark_slate_gray">#262626</color>
+
+    <color name="darken_overlay">#88000000</color>
+    <color name="darken_overlay_dark">#55000000</color>
+
+    <!-- New standard Colors -->
+    <color name="primary_color">#333333</color>
+    <color name="secondary_color">#a9a8a4</color>
+
+    <!-- New Dashboard colors -->
+    <color name="dash_ArrowColor">#ebeae7</color>
+    <color name="dash_SecondaryColor">#a5a4a1</color>
+    <color name="dash_TertiaryColor">#c8c7c3</color>
+    <color name="dash_VisitsMainColor">#3288e6</color>
+    <color name="dash_VisitsSecondaryColor">#acceef</color>
+    <color name="dash_ContactsMainColor">#df7709</color>
+    <color name="dash_ContactsSecondaryColor">#ecb77e</color>
+    <color name="dash_CustomersMainColor">#629632</color>
+    <color name="dash_CustomersSecondaryColor">#adc693</color>
+    <color name="dash_HeaderBackgroundColor">#404040</color>
+    <color name="dash_SeperatorColor">#f0f0f0</color>
+    <color name="dash_landingpage">#38b2a3</color>
+    <color name="dash_blogging">#bb4488</color>
+    <color name="dash_email">#f7c951</color>
+
+    <!--NPS colors -->
+    <color name="nps_prompt_button_unselected_orange">#de7e46</color>
+    <!-- Email colors -->
+    <color name="email_automated">#ac92ec</color>
+    <color name="email_automated_sending">#ac92ec</color>
+    <color name="email_automated_draft">#ac92ec</color>
+    <color name="email_automated_for_form">#ac92ec</color>
+    <color name="email_automated_for_form_draft">#ac92ec</color>
+    <color name="email_automated_for_form_legacy">#ac92ec</color>
+    <color name="email_automated_for_form_buffer">#ac92ec</color>
+
+    <color name="email_blog_draft">#4fc1e9</color>
+    <color name="email_blog_published">#4fc1e9</color>
+
+    <color name="email_draft">#ccd1d9</color>
+    <color name="email_draft_ab">#ccd1d9</color>
+    <color name="email_draft_ab_variant">#ccd1d9</color>
+
+    <color name="email_error">#ff0000</color>
+
+    <color name="email_loser_ab_variant">#0000ff</color>
+
+    <color name="email_page_stub">#0ffff0</color>
+
+    <color name="email_processing">#f1d557</color>
+
+    <color name="email_published">#97D69F</color>
+    <color name="email_published_ab">#97D69F</color>
+    <color name="email_published_ab_variant">#97D69F</color>
+    <color name="email_published_or_scheduled">#97D69F</color>
+
+    <color name="email_rss_to_email_draft">#ffce54</color>
+    <color name="email_rss_to_email_published">#ffce54</color>
+
+    <color name="email_scheduled">#f1d557</color>
+    <color name="email_scheduled_ab">#f1d557</color>
+
+
+    <color name="email_graph_sent">#7aba3a</color>
+    <color name="email_graph_delivered">#3870D7</color>
+    <color name="email_graph_opened">#d12b3f</color>
+    <color name="email_graph_clicked">#f4b027</color>
+
+    <color name="email_churn_total">#f4b027</color>
+    <color name="email_churn_unsub">#f4b027</color>
+    <color name="email_churn_spam">#f4b027</color>
+
+    <color name="email_bounce_soft">#d12b3f</color>
+    <color name="email_bounce_hard">#d12b3f</color>
+    <color name="email_bounce_churn_tab">#404040</color>
+
+    <!-- Monitoring & Publishing -->
+    <color name="interacting_bar_background">#f8f7f4</color>
+    <color name="interacting_bar_background_pressed">#d9d8d6</color>
+    <color name="interacting_bar_border">#e5e4e1</color>
+    <color name="interacting_bar_icon_color">#d1d0cd</color>
+
+    <color name="timeline_listadd">#8DBF59</color>
+    <color name="timeline_visit">#4A90E2</color>
+    <color name="timeline_email">#AC94E9</color>
+    <color name="timeline_email_dark">#44000000</color>
+    <color name="timeline_automation">#4FCEAD</color>
+    <color name="timeline_lifecycle">#F5A623</color>
+    <color name="timeline_twitter">#55ACEE</color>
+    <color name="timeline_wistia">#1ba1c1</color>
+    <color name="timeline_wistia_light">#a3edff</color>
+    <color name="timeline_surveymonkey">#A9BD38</color>
+    <color name="timeline_surveymonkey_light">#CFCEBF</color>
+    <color name="timeline_webinar">#3985fb</color>
+    <color name="timeline_webinar_light">#aacbff</color>
+    <color name="timeline_formsub">#DE8CB9</color>
+
+    <color name="reach_facebook">#3870D7</color>
+    <color name="reach_twitter">#2C9ED4</color>
+    <color name="reach_youtube">#D12B3F</color>
+    <color name="reach_linkedin">#F4B027</color>
+    <color name="reach_xing">#7ABA3A</color>
+    <color name="reach_googleplus">#D53326</color>
+
+</resources>

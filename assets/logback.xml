@@ -1,0 +1,25 @@
+<configuration>
+    <property name="LOG_DIR" value="/data/data/com.example/files" />
+
+    <!-- Create a logcat appender -->
+    <appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%msg</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="Crashlytics" class="com.hsdemo.android.logging.CrashlyticsAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="logcat" />
+    </root>
+
+    <root level="DEBUG">
+        <appender-ref ref="file" />
+        <appender-ref ref="Crashlytics" />
+    </root>
+</configuration>

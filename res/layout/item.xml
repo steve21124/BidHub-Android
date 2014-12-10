@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/itemcard_shell"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hubspot="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:hubspot="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dashcard"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        hubspot:cardBackgroundColor="@color/dark_gray"
+        hubspot:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dashcard_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gray_top">
+
+                <LinearLayout
+                    android:id="@+id/dashcard_bottom_separator"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="#22222222"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="#55222222"
+                    android:text="•"/>
+
+                <LinearLayout
+                              android:id="@+id/dashcard_loadingbar"
+                              android:orientation="horizontal"
+                              android:layout_height="7dp"
+                              android:layout_width="50dp"
+                              android:visibility="gone"
+                              android:layout_alignParentBottom="true"
+                              android:layout_centerHorizontal="true"
+                              android:background="#55222222" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dashcard_top"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/gray_top">
+
+                <TextView
+                    android:id="@+id/dashcard_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:translationY="12dp"
+                    android:textSize="48sp"
+                    android:text="r"
+                    android:textColor="#55222222" />
+
+                <LinearLayout
+                    android:id="@+id/dashcard_top_separator"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0"
+                    android:background="#22222222"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/dashcard_loadingspinner"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY="0.7"
+                android:scaleX="0.7"
+                />
+
+            <!-- Ends up getting popped up to translationY 40 + 2 = 42dp -->
+            <LinearLayout
+                android:id="@+id/dashcard_contentcontainer"
+                android:layout_marginBottom="62dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_gray"
+                android:translationY="335dp"
+                android:alpha="0"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"/>
+
+                    <LinearLayout
+                        android:id="@+id/itemcard_messagecontainer"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:alpha="1"
+                        android:background="@android:color/holo_green_dark"
+                        android:gravity="top"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/itemcard_message"
+                            style="@style/basefont_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#fff"
+                            android:textAllCaps="true"
+                            android:gravity="right"
+                            android:text="Your bid of $100 is the highest so far!"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#aaffffff" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/price_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="10dp"
+                        android:gravity="right"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/itemcard_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:gravity="right"
+                            android:text="$100"/>
+
+                        <TextView
+                            android:id="@+id/itemcard_bidqty"
+                            style="@style/basefont_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#44ffffff"
+                            android:textAllCaps="true"
+                            android:gravity="right"
+                            android:text="6 bids"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/titlecontainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/price_container"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/itemcard_title"
+                            style="@style/basefont_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:text="Drive a Tesla"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <com.android.volley.toolbox.NetworkImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/avatar" />
+
+                            <TextView
+                                android:id="@+id/itemcard_donor"
+                                style="@style/basefont_light"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="#44ffffff"
+                                android:textAllCaps="true"
+                                android:text="JD Sherman"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/titlecontainer"
+                        android:layout_marginBottom="10dp"
+                        android:background="#22ffffff" />
+
+                    <TextView
+                        android:id="@+id/itemcard_description"
+                        style="@style/basefont_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#aaffffff"
+                        android:layout_marginBottom="30dp"/>
+
+                    <RelativeLayout
+                        style="@style/oldapi_paddingfix"
+                        android:id="@+id/itemcard_controlscontainer"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/itemcard_buttons"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button style="@style/basefont_light"
+                                    android:id="@+id/placebid"
+                                    android:layout_width="0px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:visibility="gone"
+                                    android:text="Place Bid" />
+
+                            <Button style="@style/basefont_light"
+                                    android:id="@+id/plusone"
+                                    android:layout_width="0px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="+$5" />
+
+                            <Button style="@style/basefont_light"
+                                    android:id="@+id/plusfive"
+                                    android:layout_width="0px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="+$10" />
+
+                            <Button style="@style/basefont_light"
+                                    android:id="@+id/plusten"
+                                    android:layout_width="0px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="+$25" />
+
+                            <Button style="@style/basefont_light"
+                                    android:id="@+id/itemcard_other"
+                                    android:layout_width="0px"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="p" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/itemcard_confirmcontainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/itemcard_confirm"
+                                style="@style/basefont_light"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Yes, bid $145."/>
+
+                            <Button
+                                android:id="@+id/itemcard_cancel"
+                                style="@style/basefont_light"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="I didn't mean it!"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

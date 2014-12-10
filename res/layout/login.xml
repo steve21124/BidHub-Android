@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:title="TEST"
+        android:visibility="gone"
+        android:background="@color/primary_orange"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:id="@+id/base_tint_darken"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="vertical"
+        android:background="#33000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/logincontainer"
+        android:background="#ccaaaaaa" />
+
+    <LinearLayout
+        android:id="@id/logincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_vertical"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true">
+
+
+
+        <TextView style="@style/basefont_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#bbeeeeee"
+            android:textSize="22sp"
+            android:text="Name and email please?"/>
+
+        <EditText style="@style/basefont_light"
+                  android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:nextFocusForward="@+id/email"
+            android:singleLine="true"
+            android:hint="name"
+            />
+
+        <EditText style="@style/basefont_light"
+                  android:id="@+id/email"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="email address"
+                  android:singleLine="true"
+                  android:inputType="textEmailAddress"
+                  android:nextFocusForward="@+id/gobutton"
+            />
+
+        <Button
+            android:id="@+id/gobutton"
+            style="@style/basefont_light"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Start Bidding"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logincontainer"
+        android:background="#ccaaaaaa" />
+
+</RelativeLayout>

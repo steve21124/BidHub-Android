@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HubSpotTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/topgray_opaque</item>
+        <item name="colorPrimaryDark">@color/topgray_opaque</item>
+        <item name="colorAccent">@color/topgray_opaque</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="drawer_style">
+        <item name="android:layout_marginTop">25dp</item >
+    </style>
+</resources>
