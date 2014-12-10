@@ -1,4 +1,4 @@
 AuctionApp-Android
 ==================
 
-Android client for the Auction App
+Codename (real name?) bidbidbid.biz.
