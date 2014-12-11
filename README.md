@@ -11,3 +11,8 @@ Here's a list of the HubSpot-specific assets in the app, which you can change to
 * `drawable/notificationicon.png` status bar icon for push notifications
 * `drawable/appicon.png` app icon for the app drawer and for push notifications
 * `drawable/bg.png` background for the login screen and for the hamburger menu
+
+If you change the package name from the default `com.hsdemo.auction`, make sure to change the following manifest tags as well, or push notifications won't work and you will be very frustrated:
+* `<category android:name="com.hsdemo.auction" />`
+* `<permission android:protectionLevel="signature" android:name="com.hsdemo.auction.permission.C2D_MESSAGE" />`
+* `<uses-permission android:name="com.hsdemo.auction.permission.C2D_MESSAGE" />`
