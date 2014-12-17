@@ -1,5 +1,5 @@
 # BidHub Android
-Android client for HubSpot's open-source silent auction app. For an overview of the auction app project, [check out our blog post about it](http://dev.hubspot.com/coming-soon)!
+Android client for HubSpot's open-source silent auction app. For an overview of the auction app project, [check out our blog post about it](http://dev.hubspot.com/blog/building-an-auction-app-in-a-weekend)!
 
 ![](http://i.imgur.com/qIud2uSl.png)
 
